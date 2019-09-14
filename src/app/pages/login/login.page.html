@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Acceso</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form (ngSubmit)="onSubmit()">
+    <ion-list lines=“none”>
+      <ion-item class="ion-padding-top">
+        <ion-img class="center" src="assets/logo_2.jpg"></ion-img>
+      </ion-item>
+      <ion-item class="ion-padding-top">
+        <ion-label position="floating">Usuario</ion-label>
+        <ion-input type="email"></ion-input>
+      </ion-item>
+      <ion-item class="ion-padding-top">
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Recordarme?</ion-label>
+        <ion-checkbox slot="end"></ion-checkbox>
+      </ion-item>
+    </ion-list>
+    <ion-button shape="round" expand="full" fill="outline" size="large">
+      <ion-icon slot="start" name="log-in"></ion-icon>
+      Login
+    </ion-button>
+  </form>
+</ion-content>
